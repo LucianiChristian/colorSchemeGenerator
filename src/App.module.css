@@ -1,0 +1,24 @@
+:root {
+    --light-grey: #D1D5DB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pageContainer {
+    min-height : 100vh;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.appContainer {
+    height: 550px;
+    width: 550px;
+
+    border: 1px solid black;
+}

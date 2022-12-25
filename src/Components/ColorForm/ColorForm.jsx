@@ -1,7 +1,9 @@
+import classes from "./ColorForm.module.css";
+
 export default function ColorForm() {
     return (
-        <div>
-            <input type="color" />
+        <div className={classes.container}>
+            <input type="color"/>
             <select>
                 <option value="monochrome">monochrome</option>
                 <option value="monochrome-dark">monochrome-dark</option>

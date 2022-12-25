@@ -1,0 +1,10 @@
+.container > * {
+    border-color: transparent;
+    border-radius: 6px;
+    outline: 1px solid var(--light-grey);
+}
+
+select {
+    padding: 9px 13px;
+    border-right: solid 10px transparent;
+}
