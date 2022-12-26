@@ -1,10 +1,56 @@
+.container {
+    padding: var(--padding-large); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    box-shadow: var(--box-shadow);
+}
+
 .container > * {
     border-color: transparent;
-    border-radius: 6px;
     outline: 1px solid var(--light-grey);
 }
 
+input[type="color"] {
+    height: 42px;
+    width: 60px;
+}
+
 select {
-    padding: 9px 13px;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
     border-right: solid 10px transparent;
+    font-size: var(--fontsize-medium);
+
+    width: 312px;
+}
+
+option {
+    font-size: var(--fontsize-medium);
+}
+
+
+button {
+    height: 42px;
+    width: 120px;
+
+    border-radius: var(--border-radius);
+
+    background-color: transparent;
+    font-size: var(--fontsize-small);
+
+    transition: all 0.1s;
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+button:active {
+    filter: brightness(0.5);
+    transform: scale(0.99);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.15));
 }

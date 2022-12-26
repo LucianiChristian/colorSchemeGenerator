@@ -5,16 +5,16 @@ export default function ColorForm() {
         <div className={classes.container}>
             <input type="color"/>
             <select>
-                <option value="monochrome">monochrome</option>
-                <option value="monochrome-dark">monochrome-dark</option>
-                <option value="monochrome-light">monochrome-light</option>
-                <option value="analogic">analogic</option>
-                <option value="complement">complement</option>
-                <option value="analogic-complement">analogic-complement</option>
-                <option value="triad">triad</option>
-                <option value="quad">quad</option>
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
             </select>
-            <button>Get Scheme</button>
+            <button>Get color scheme</button>
         </div>
     )
 }
