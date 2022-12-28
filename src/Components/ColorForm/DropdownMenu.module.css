@@ -1,0 +1,31 @@
+/* visualization aids */
+.container {
+    width: 200px;
+    position: relative;
+}
+
+/* actual */
+.header, .dropdown {
+    border: 1px solid var(--light-grey);
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+.option {
+    padding: 0.5em;
+}
+.option:hover {
+    background-color: var(--light-grey);
+}

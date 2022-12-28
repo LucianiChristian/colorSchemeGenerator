@@ -19,7 +19,16 @@ input[type="color"] {
     width: 60px;
 }
 
-select {
+.dropdown {
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    border-right: solid 10px transparent;
+    font-size: var(--fontsize-medium);
+
+    width: 312px;    
+}
+
+/* select {
     padding: var(--padding);
     border-radius: var(--border-radius);
     border-right: solid 10px transparent;
@@ -30,12 +39,16 @@ select {
 
 option {
     font-size: var(--fontsize-medium);
-}
+} */
 
 
 button {
     height: 42px;
     width: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-radius: var(--border-radius);
 
