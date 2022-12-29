@@ -1,13 +1,15 @@
 import classes from "./ColorForm.module.css";
 import DropdownMenu from "./DropdownMenu";
 import { ColorContext } from "../../colorContext";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 
 export default function ColorForm() {
     const { refreshColors } = useContext(ColorContext);
 
-    const [colorInput, setColorInput] = useState("#000000"); 
+    const [colorInput, setColorInput] = useState("#FFFFFF"); 
     
+    useEffect(() => refreshColors(colorInput), []);
+
     return (
         <div className={classes.container}>
             <input type="color" value={colorInput} onChange={(e) => setColorInput(e.target.value)}/>

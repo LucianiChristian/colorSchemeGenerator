@@ -35,13 +35,13 @@
 .appContainer {
     height: 550px;
     width: 550px;
-
+    
     display: flex;
     flex-direction: column;
 
+    box-shadow: var(--box-shadow);
     font-family: "Inter", sans-serif;
 
-    border: 1px solid black;
 }
 
 button, input {

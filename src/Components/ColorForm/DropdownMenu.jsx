@@ -26,7 +26,6 @@ function DropdownMenu() {
         });
     }, [])
 
-    
     return (
         <div ref={dropdownRef} className={classes.container}>
             <div className={classes.header} onClick={toggleDisplay}>

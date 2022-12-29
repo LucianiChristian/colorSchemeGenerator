@@ -7,8 +7,6 @@ import ColorScheme from "./Components/ColorScheme/ColorScheme";
 export default function App () {
     const { colors, refreshColors } = useContext(ColorContext);
 
-    useEffect(() => refreshColors(colors), []);
-
     return (
         <div className={classes.pageContainer}>
             <div className={classes.appContainer}>
