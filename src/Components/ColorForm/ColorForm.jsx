@@ -1,5 +1,5 @@
 import classes from "./ColorForm.module.css";
-import DropdownMenu from "./DropdownMenu";
+import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import { ColorContext } from "../../colorContext";
 import { useContext, useState, useEffect } from "react";
 
