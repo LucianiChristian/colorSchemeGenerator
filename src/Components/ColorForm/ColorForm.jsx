@@ -1,22 +1,18 @@
 import classes from "./ColorForm.module.css";
 import DropdownMenu from "./DropdownMenu";
+import { ColorContext } from "../../colorContext";
+import { useContext, useState } from "react";
 
 export default function ColorForm() {
+    const { refreshColors } = useContext(ColorContext);
+
+    const [colorInput, setColorInput] = useState("#000000"); 
+    
     return (
         <div className={classes.container}>
-            <input type="color"/>
+            <input type="color" value={colorInput} onChange={(e) => setColorInput(e.target.value)}/>
             <DropdownMenu />
-            <button>Get color scheme</button>
+            <button onClick={() => refreshColors(colorInput)}>Get color scheme</button>
         </div>
     )
 }
-            // <select>
-            //     <option value="monochrome">Monochrome</option>
-            //     <option value="monochrome-dark">Monochrome-dark</option>
-            //     <option value="monochrome-light">Monochrome-light</option>
-            //     <option value="analogic">Analogic</option>
-            //     <option value="complement">Complement</option>
-            //     <option value="analogic-complement">Analogic-complement</option>
-            //     <option value="triad">Triad</option>
-            //     <option value="quad">Quad</option>
-            // </select>

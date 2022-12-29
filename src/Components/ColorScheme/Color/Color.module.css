@@ -1,4 +1,25 @@
 .container {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+}
+
+.colorBlock {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexFooter {
+    height: 46px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--fontsize-small);
+    letter-spacing: 2px;
 }

@@ -1,31 +1,45 @@
-/* visualization aids */
 .container {
-    width: 200px;
     position: relative;
+
+    border-radius: var(--border-radius);
+    font-size: var(--fontsize-medium);
+
+    width: 312px;
+
+    background-color: white;
+    cursor: pointer;
 }
 
-/* actual */
 .header, .dropdown {
     border: 1px solid var(--light-grey);
+    border-radius: var(--border-radius);
 }
 
 .header {
+    height: 42px;
+    padding: 0.5em;
 
     display: flex;
     justify-content: space-between;
-    padding: 0.5em;
+    align-items: center;
+
+    background-color: inherit;
+}
+
+.headerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 26px;
+    color: var(--grey);
 }
 
 .dropdown {
     position: absolute;
     width: 100%;
-
     margin-top: 5px;
-}
 
-.option {
-    padding: 0.5em;
-}
-.option:hover {
-    background-color: var(--light-grey);
+    background-color: inherit;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
 }

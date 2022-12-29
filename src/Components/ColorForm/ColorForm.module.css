@@ -1,5 +1,6 @@
 .container {
     padding: var(--padding-large); 
+    height: 90px;
 
     display: flex;
     justify-content: center;
@@ -11,36 +12,13 @@
 
 .container > * {
     border-color: transparent;
-    outline: 1px solid var(--light-grey);
 }
 
 input[type="color"] {
-    height: 42px;
+    height: 38px;
     width: 60px;
+    outline: 1px solid var(--light-grey);
 }
-
-.dropdown {
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-    border-right: solid 10px transparent;
-    font-size: var(--fontsize-medium);
-
-    width: 312px;    
-}
-
-/* select {
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-    border-right: solid 10px transparent;
-    font-size: var(--fontsize-medium);
-
-    width: 312px;
-}
-
-option {
-    font-size: var(--fontsize-medium);
-} */
-
 
 button {
     height: 42px;
@@ -52,6 +30,7 @@ button {
 
     border-radius: var(--border-radius);
 
+    outline: 1px solid var(--light-grey);
     background-color: transparent;
     font-size: var(--fontsize-small);
 
