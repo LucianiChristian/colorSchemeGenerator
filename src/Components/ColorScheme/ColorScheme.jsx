@@ -9,7 +9,7 @@ export default function ColorScheme() {
     return (
         <main className={classes.container}>
             {
-                colors.map(color => <Color hex={color.hex} name={color.name}/>)
+                colors.map((color, index) => <Color key={index} hex={color.hex} name={color.name}/>)
             }
         </main>
     )
