@@ -12,7 +12,7 @@ export default function ColorForm() {
 
     return (
         <div className={classes.container}>
-            <input type="color" value={colorInput} onChange={(e) => setColorInput(e.target.value)}/>
+            <input className={classes.colorPicker} type="color" value={colorInput} onChange={(e) => setColorInput(e.target.value)}/>
             <DropdownMenu />
             <button onClick={() => refreshColors(colorInput)}>Get color scheme</button>
         </div>

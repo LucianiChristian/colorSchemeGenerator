@@ -6,7 +6,9 @@ export default function Color({hex, name}) {
             <div 
                 className={classes.colorBlock} 
                 style={{backgroundColor: hex}}
-            >{name}</div>
+            >
+                <div className={classes.colorName}>{name}</div>    
+            </div>
             <footer className={classes.hexFooter}>{hex}</footer>
         </div>
     )

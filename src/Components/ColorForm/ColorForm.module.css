@@ -14,7 +14,7 @@
     border-color: transparent;
 }
 
-input[type="color"] {
+.colorPicker {
     height: 38px;
     width: 60px;
     outline: 1px solid var(--light-grey);
@@ -45,4 +45,13 @@ button:active {
     filter: brightness(0.5);
     transform: scale(0.99);
     background-image: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.15));
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: var(--padding-small);
+    }
+    .colorPicker {
+        height: 30px;
+    }
 }

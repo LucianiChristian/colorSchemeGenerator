@@ -24,6 +24,11 @@
     font-family: "Inter", sans-serif;
 }
 
+*::selection {
+    background-color: var(--grey);
+    color: white;
+}
+
 .pageContainer {
     min-height : 100vh;
 
@@ -46,4 +51,19 @@
 
 button, input {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --fontsize-small: 8px;
+        --fontsize-medium: 0.8rem;
+
+        --padding-small: 4px 12px;
+        --padding: 7px 19px;
+        --padding-large: 15px 24px;
+    }
+    .appContainer {
+        width: 90vw;
+        height: 90vh;
+    }
 }

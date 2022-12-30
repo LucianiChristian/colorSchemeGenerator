@@ -13,6 +13,24 @@
     align-items: center;
 }
 
+.colorName {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0.8;
+    padding: var(--padding-small);
+    font-size: var(--fontsize-small);
+    text-align: center;
+    border: none;
+
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hexFooter {
     height: 46px;
     
@@ -22,4 +40,17 @@
 
     font-size: var(--fontsize-small);
     letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex: 1;
+    }
+    .colorName {
+        visibility: hidden;
+    }
+    .hexFooter {
+        height: 30px;
+        font-size: var(--fontsize-medium);       
+    }
 }
