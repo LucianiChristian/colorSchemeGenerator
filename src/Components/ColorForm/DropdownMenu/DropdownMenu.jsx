@@ -6,7 +6,12 @@ import { ColorContext } from "../../../colorContext";
 function DropdownMenu() {
     const { setMode } = useContext(ColorContext);
 
-    const [display, setDisplay] = useState();
+    const [display, setDisplay] = useState(false);
+    const displayRef = useRef(display);
+    useEffect(() => {
+        displayRef.current = display;
+    }, [display]);
+
     const toggleDisplay = () => setDisplay(prevDisplay => !prevDisplay);
 
     const [value, setValue] = useState("Monochrome");
@@ -19,10 +24,9 @@ function DropdownMenu() {
 
     const dropdownRef = useRef(null);
     useEffect(() => {
-        document.body.addEventListener("mousedown",  (e) => {
+        document.body.addEventListener("mousedown", (e) => {
             const wasDropdownClicked = dropdownRef.current.contains(e.target);
-            
-            wasDropdownClicked === false && display === true && setDisplay(false);
+            wasDropdownClicked === false && displayRef.current === true && setDisplay(false);
         });
     }, [])
 
