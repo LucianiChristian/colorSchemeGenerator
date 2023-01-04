@@ -42,7 +42,6 @@ button:hover {
 }
 
 button:active {
-    filter: brightness(0.5);
     transform: scale(0.99);
     background-image: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.15));
 }
