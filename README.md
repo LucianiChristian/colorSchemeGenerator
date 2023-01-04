@@ -1,5 +1,7 @@
 # Color Scheme Generator
 
+### [Live Demo](https://lucianichristian.github.io/colorSchemeGenerator/)
+
 React application to generate color schemes based on two parameters : a seed color and a scheme type.  
 
 Schemes →  [Color Picker API](https://www.thecolorapi.com/docs#schemes)
