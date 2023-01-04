@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
 
-
 const ColorContext = createContext();
 
 function ColorContextProvider({children}) {
